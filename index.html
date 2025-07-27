@@ -37,6 +37,17 @@
       justify-content: center;
       z-index: 1000;
     }
+    #scrollToVideo {
+      display: block;
+      margin: 1rem auto 0 auto;
+      padding: 0.5rem 1rem;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
     @media(min-width: 768px) {
       .gallery { grid-template-columns: repeat(3, 1fr); }
       .video-section { grid-template-columns: repeat(2, 1fr); }
@@ -67,6 +78,7 @@
       <img src="https://images.pexels.com/photos/9775873/pexels-photo-9775873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="时尚2" />
       <img src="https://images.pexels.com/photos/6311393/pexels-photo-6311393.jpeg?auto=compress&cs=tinysrgb&w=600" alt="时尚3" />
     </div>
+    <button id="scrollToVideo">查看更多视频</button>
   </section>
 
   <section class="section" id="video">
@@ -81,7 +93,7 @@
 
   <section class="section" id="contact">
     <h2>联系我们</h2>
-    <p style="text-align:center; font-size: 0.95rem;">关注我们的Instagram：<br>@elale.style</p>
+    <p style="text-align:center; font-size: 0.95rem;">关注我们的youtube：<br>@elale_com</p>
   </section>
 
   <footer>
@@ -98,6 +110,11 @@
       } else {
         backToTopButton.style.display = 'none';
       }
+    });
+
+    const scrollToVideo = document.getElementById('scrollToVideo');
+    scrollToVideo.addEventListener('click', () => {
+      document.getElementById('video').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
 </body>
