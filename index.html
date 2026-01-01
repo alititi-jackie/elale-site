@@ -1,133 +1,236 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
+
+  <!-- ======【模板配置区：只改这里】====== -->
+  <script>
+    const DOMAIN_NAME = "ELALE.COM";
+    const DOMAIN_DESC_CN = "ELALE.COM —— 简短、国际化、极具品牌感的 5 字母 .com 域名";
+    const DOMAIN_DESC_EN = "ELALE.COM is a short, elegant, and highly brandable 5-letter .com domain.";
+    const ALIYUN_LINK = "https://mi.aliyun.com/domain-detail?domain=elale.com&scm=true";
+    const GODADDY_LINK = "https://www.godaddy.com/zh-sg/domainsearch/find?domainToCheck=ELALE.COM";
+    const RETURN_URL = "https://openaa.com";
+    const COUNTDOWN_SECONDS = 20;
+  </script>
+  <!-- ======【配置区结束】====== -->
+
+  <title>BOBAUP.COM｜精品品牌域名出售</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ELALE 时尚潮流</title>
+  <meta name="description" content="BOBAUP.COM 精品品牌域名出售，简短好记，适合奶茶、饮品、潮流品牌。由 OpenAA 推荐。" />
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Helvetica Neue', sans-serif; background: #fff; color: #222; line-height: 1.6; position: relative; }
-    header { background: #000; color: #fff; padding: 1rem; text-align: center; }
-    header h1 { font-size: 1.8rem; letter-spacing: 2px; }
-    nav { display: flex; justify-content: center; background: #f8f8f8; padding: 0.5rem 1rem; flex-wrap: wrap; }
-    nav a { margin: 0.5rem 1rem; text-decoration: none; color: #333; font-size: 0.95rem; }
-    .hero { position: relative; }
-    .hero img { width: 100%; height: auto; }
-    .section { padding: 1.5rem 1rem; }
-    .section h2 { font-size: 1.2rem; margin-bottom: 1rem; text-align: center; }
-    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .video-section { display: grid; gap: 1rem; }
-    .video-section iframe { width: 100%; height: 220px; border-radius: 10px; }
-    footer { background: #000; color: #fff; text-align: center; padding: 1rem 0; font-size: 0.8rem; }
-    #backToTop {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #000;
-      color: #fff;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-      cursor: pointer;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f7f9fc;
+      color: #333;
     }
-    #scrollToVideo {
-      display: block;
-      margin: 1rem auto 0 auto;
-      padding: 0.5rem 1rem;
-      background: #000;
+
+    header {
+      background: linear-gradient(135deg, #0b3c5d, #1e6fa3);
       color: #fff;
+      padding: 22px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 25px auto;
+      padding: 35px 25px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    .top-bar {
+      margin-bottom: 25px;
+    }
+
+    .back-button {
+      background: none;
       border: none;
-      border-radius: 20px;
-      font-size: 0.9rem;
+      color: #0b3c5d;
+      font-size: 14px;
       cursor: pointer;
     }
-    @media(min-width: 768px) {
-      .gallery { grid-template-columns: repeat(3, 1fr); }
-      .video-section { grid-template-columns: repeat(2, 1fr); }
-      .video-section iframe { height: 300px; }
+
+    .back-button:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #0b3c5d;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .subtitle-en {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      background: #f1f6fb;
+      padding: 18px 20px;
+      border-left: 4px solid #0b3c5d;
+      margin-bottom: 30px;
+      border-radius: 6px;
+    }
+
+    .highlight p {
+      margin: 6px 0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin: 30px 0;
+    }
+
+    .buy-button {
+      display: inline-block;
+      margin: 10px 12px 0 0;
+      padding: 12px 22px;
+      background: #0b3c5d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 15px;
+      transition: background 0.2s ease;
+    }
+
+    .buy-button:hover {
+      background: #092f49;
+    }
+
+    .contact {
+      margin-top: 35px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact a {
+      color: #0b3c5d;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    footer strong {
+      color: #0b3c5d;
     }
   </style>
+
+  <!-- ====== 倒计时 + 自动返回 ====== -->
+  <script>
+    let seconds = COUNTDOWN_SECONDS;
+
+    function countdown() {
+      const cn = document.getElementById("countdown-cn");
+      const en = document.getElementById("countdown-en");
+
+      if (cn) cn.textContent = seconds;
+      if (en) en.textContent = seconds;
+
+      if (seconds <= 0) {
+        window.location.href = RETURN_URL;
+      }
+      seconds--;
+    }
+
+    setInterval(countdown, 1000);
+  </script>
 </head>
+
 <body>
-  <header>
-    <h1>ELALE 潮流时尚</h1>
-  </header>
 
-  <nav>
-    <a href="#trends">流行趋势</a>
-    <a href="#style">穿搭指南</a>
-    <a href="#video">时尚视频</a>
-    <a href="#contact">联系我们</a>
-  </nav>
+<header>
+  <h1>OpenAA</h1>
+  <p>美国华人生活入口 · 精选域名推荐</p>
+</header>
 
-  <div class="hero">
-    <img src="https://images.pexels.com/photos/5886045/pexels-photo-5886045.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="潮流穿搭" />
+<div class="container">
+
+  <div class="top-bar">
+    <a href="https://openaa.com">
+      <button class="back-button">← 返回 OpenAA 首页</button>
+    </a>
   </div>
 
-  <section class="section" id="trends">
-    <h2>本季流行</h2>
-    <div class="gallery">
-      <!-- 精选可用的时尚穿搭图片，全部来自pexels且可正常显示 -->
-      <img src="https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="休闲运动风" />
-      <img src="https://images.pexels.com/photos/5322206/pexels-photo-5322206.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="彩色时尚街头" />
-      <img src="https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="时尚外套搭配" />
-      <img src="https://images.pexels.com/photos/936075/pexels-photo-936075.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="复古写真" />
-      <img src="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="街头艺术风" />
-      <img src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="潮流帽饰搭配" />
-      <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="型格休闲风" />
-      <img src="https://images.pexels.com/photos/5322212/pexels-photo-5322212.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="都市时尚穿搭" />
-      <img src="https://images.pexels.com/photos/1139741/pexels-photo-1139741.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="高级质感时尚" />
-      <img src="https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="春夏潮流搭配" />
-      <img src="https://images.pexels.com/photos/1040421/pexels-photo-1040421.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="裙装时尚" />
-      <img src="https://images.pexels.com/photos/2100063/pexels-photo-2100063.jpeg?auto=compress&cs=tinysrgb&w=1080" alt="潮流情侣穿搭" />
-    </div>
-    <button id="scrollToVideo">查看更多视频</button>
-  </section>
+  <h2 id="domain-name"></h2>
+  <div class="subtitle" id="domain-desc-cn"></div>
+  <div class="subtitle-en" id="domain-desc-en"></div>
 
-  <section class="section" id="video">
-    <h2>精选时尚视频</h2>
-    <div class="video-section">
-      <iframe src="https://www.youtube.com/embed/yo6GklFH2sg" title="视频1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/1ToJ8QZlFEc" title="视频2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/-PV6LK9YSKQ" title="视频3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/rodRxcERtIY" title="视频4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/rHkx6UTqjzo" title="视频5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/5cm4cn4_rTk" title="视频6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </section>
+  <div class="highlight">
+    <p>✔ 简短好记，品牌感强</p>
+    <p>✔ 适合官网、连锁门店、跨境项目</p>
+    <p>✔ 稀缺优质域名，先到先得</p>
+  </div>
 
-  <section class="section" id="contact">
-    <h2>联系我们</h2>
-    <p style="text-align:center; font-size: 0.95rem;">此域名出售，联系邮箱： <br>323748@gmail.com</p>
-  </section>
+  <div class="buttons">
+    <a class="buy-button" id="aliyun-buy" target="_blank">阿里云购买</a>
+    <a class="buy-button" id="godaddy-buy" target="_blank">GoDaddy 查看</a>
+  </div>
 
-  <footer>
-    版权所有 © 2025 ELALE.com
-  </footer>
+  <p><strong>欢迎洽谈购买 | Available for acquisition</strong></p>
 
-  <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+  <div class="contact">
+    联系邮箱 / Contact：
+    <a href="mailto:323748@gmail.com">323748@gmail.com</a>
+  </div>
 
-  <script>
-    const backToTopButton = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopButton.style.display = 'flex';
-      } else {
-        backToTopButton.style.display = 'none';
-      }
-    });
+  <p style="margin-top:20px;font-size:13px;color:#777;">
+    <span id="countdown-cn">10</span> 秒后将自动返回 OpenAA 首页<br />
+    Redirecting to OpenAA homepage in
+    <span id="countdown-en">10</span> seconds
+  </p>
 
-    const scrollToVideo = document.getElementById('scrollToVideo');
-    scrollToVideo.addEventListener('click', () => {
-      document.getElementById('video').scrollIntoView({ behavior: 'smooth' });
-    });
-  </script>
+</div>
+
+<footer>
+  © 2025 <strong>OpenAA</strong> · 美国华人生活入口
+</footer>
+
+<!-- ====== 自动注入内容 ====== -->
+<script>
+  document.getElementById("domain-name").textContent = DOMAIN_NAME;
+  document.getElementById("domain-desc-cn").textContent = DOMAIN_DESC_CN;
+  document.getElementById("domain-desc-en").textContent = DOMAIN_DESC_EN;
+  document.getElementById("aliyun-buy").href = ALIYUN_LINK;
+  document.getElementById("godaddy-buy").href = GODADDY_LINK;
+</script>
+
 </body>
 </html>
+
