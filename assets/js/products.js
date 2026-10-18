@@ -8,8 +8,4 @@ window.ELALE_PRODUCTS = [
  {name:{zh:"日常基础款",en:"Everyday Essential"},category:"ESSENTIAL",tone:"tone-cream",image:"https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80",logo:false},
  {name:{zh:"轻松层次搭配",en:"Easy Layering"},category:"LOOKBOOK",tone:"tone-gray",image:"https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80",logo:false},
  {name:{zh:"中性色调灵感",en:"Neutral Color Story"},category:"COLOR",tone:"tone-white",image:"https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",logo:false},
- {name:{zh:"日常宽松衬衫",en:"Relaxed Everyday Shirt"},category:"SHIRT",tone:"tone-cream",image:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80",logo:false},
- {name:{zh:"简约休闲造型",en:"Minimal Casual Look"},category:"LOOKBOOK",tone:"tone-gray",image:"https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",logo:false},
- {name:{zh:"柔和色彩搭配",en:"Soft Color Pairing"},category:"COLOR",tone:"tone-detail",image:"https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80",logo:false},
- {name:{zh:"周末轻松穿搭",en:"Relaxed Weekend Style"},category:"LOOKBOOK",tone:"tone-black",image:"https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=900&q=80",logo:false}
 ];
