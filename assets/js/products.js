@@ -1,11 +1,11 @@
-/* 新增服饰图片时，只需在此数组增加一项；图片放到 /assets/images/，填写对应路径即可。 */
+/* 风格参考图暂用于预览；正式品牌图片替换后，只需改 image 地址。 */
 window.ELALE_PRODUCTS = [
- {name:{zh:"白色 T 恤",en:"White T-shirt"},category:"T-SHIRT",tone:"tone-white",image:"",logo:true},
- {name:{zh:"黑色 T 恤",en:"Black T-shirt"},category:"T-SHIRT",tone:"tone-black",image:"",logo:true},
- {name:{zh:"米色卫衣",en:"Cream Sweatshirt"},category:"SWEATSHIRT",tone:"tone-cream",image:"",logo:true},
- {name:{zh:"深灰连帽衫",en:"Charcoal Hoodie"},category:"HOODIE",tone:"tone-gray",image:"",logo:true},
- {name:{zh:"Logo 刺绣细节",en:"Logo Embroidery"},category:"DETAIL",tone:"tone-detail",image:"",logo:true},
- {name:{zh:"衣领标签",en:"Neck Label"},category:"DETAIL",tone:"tone-cream",image:"",logo:true},
- {name:{zh:"背面印花",en:"Back Print"},category:"PRINT",tone:"tone-gray",image:"",logo:true},
- {name:{zh:"日常穿搭",en:"Everyday Look"},category:"LOOKBOOK",tone:"tone-white",image:"",logo:true}
+ {name:{zh:"白色 T 恤",en:"White T-shirt"},category:"T-SHIRT",tone:"tone-white",image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",logo:false},
+ {name:{zh:"黑色 T 恤",en:"Black T-shirt"},category:"T-SHIRT",tone:"tone-black",image:"https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=80",logo:false},
+ {name:{zh:"米色日常上衣",en:"Neutral Everyday Top"},category:"TOP",tone:"tone-cream",image:"https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=80",logo:false},
+ {name:{zh:"休闲卫衣风格",en:"Casual Sweatshirt Style"},category:"SWEATSHIRT",tone:"tone-gray",image:"https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",logo:false},
+ {name:{zh:"简约穿搭灵感",en:"Minimal Outfit Inspiration"},category:"LOOKBOOK",tone:"tone-detail",image:"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80",logo:false},
+ {name:{zh:"日常基础款",en:"Everyday Essential"},category:"ESSENTIAL",tone:"tone-cream",image:"https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80",logo:false},
+ {name:{zh:"轻松层次搭配",en:"Easy Layering"},category:"LOOKBOOK",tone:"tone-gray",image:"https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80",logo:false},
+ {name:{zh:"中性色调灵感",en:"Neutral Color Story"},category:"COLOR",tone:"tone-white",image:"https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",logo:false}
 ];
