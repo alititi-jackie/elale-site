@@ -58,6 +58,27 @@
       <div class="story-mark"><span class="large-wordmark">elale<span>.</span></span><span class="story-mark-caption" data-i18n="brandSignature">简约 · 舒适 · 日常</span></div>
     </section>
 
+    <section class="newsletter section-wrap" id="newsletter">
+      <div class="newsletter-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span>ELALE / STAY IN TOUCH</p>
+        <h2 data-i18n="newsletterTitle">关注新品，<br>一起定义日常。</h2>
+        <p data-i18n="newsletterDesc">选择你感兴趣的款式，帮助 elale 了解大家期待什么。</p>
+      </div>
+      <form class="newsletter-form" id="interestForm">
+        <label for="signupEmail" data-i18n="emailLabel">电子邮箱</label>
+        <input id="signupEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <fieldset>
+          <legend data-i18n="interestLegend">你最感兴趣的款式（可多选）</legend>
+          <label class="check-option"><input type="checkbox" name="interest" value="T-shirts"><span data-i18n="interestTee">T 恤</span></label>
+          <label class="check-option"><input type="checkbox" name="interest" value="Sweatshirts"><span data-i18n="interestSweat">卫衣</span></label>
+          <label class="check-option"><input type="checkbox" name="interest" value="Hoodies"><span data-i18n="interestHoodie">连帽衫</span></label>
+          <label class="check-option"><input type="checkbox" name="interest" value="Brand details"><span data-i18n="interestDetail">Logo 与品牌细节</span></label>
+        </fieldset>
+        <button type="submit" class="signup-button"><span data-i18n="signupButton">提交兴趣调查</span><span aria-hidden="true">↗</span></button>
+        <p class="privacy-note" data-i18n="privacyNote">自愿填写 · 用于了解大家感兴趣的服饰方向。目前尚未连接真实数据保存服务。</p>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
